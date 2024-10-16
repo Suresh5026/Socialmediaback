@@ -9,7 +9,7 @@ const app = express();
 connectMongoDB();
 app.use(bodyParser.json());
 app.use(cors({
-    origin: 'http://localhost:5173', 
+    origin: 'https://ephemeral-kulfi-b18168.netlify.app', 
     credentials: true
 }))
 app.get("/", (req, res) => {
